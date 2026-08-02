@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="CellModifier" format=3 uid="uid://fltkmbkt2avc"]
+
+[ext_resource type="Script" uid="uid://dpqoi2hs1fvml" path="res://resources/cell_modifiers/cell_modifiers_component.gd" id="1_oaxi6"]
+[ext_resource type="Script" uid="uid://cr8o1ipj5jmm0" path="res://resources/cell_modifiers/components/blocks_passage_component.gd" id="2_aqlo3"]
+[ext_resource type="Script" uid="uid://clh0bfdm6r36w" path="res://resources/cell_modifiers/cell_modifier.gd" id="2_t87j4"]
+[ext_resource type="Script" uid="uid://bqno265lsmsqg" path="res://resources/cell_modifiers/components/damage_on_enter_component.gd" id="3_id4xb"]
+
+[sub_resource type="Resource" id="Resource_aqlo3"]
+script = ExtResource("2_aqlo3")
+metadata/_custom_type_script = "uid://cr8o1ipj5jmm0"
+
+[sub_resource type="Resource" id="Resource_id4xb"]
+script = ExtResource("3_id4xb")
+damage = 2
+metadata/_custom_type_script = "uid://bqno265lsmsqg"
+
+[resource]
+script = ExtResource("2_t87j4")
+diasplay_name = "Горящие шипы"
+description = "Наносит урон (2). Нельзя пройти"
+components = Array[ExtResource("1_oaxi6")]([SubResource("Resource_aqlo3"), SubResource("Resource_id4xb")])
+metadata/_custom_type_script = "uid://clh0bfdm6r36w"

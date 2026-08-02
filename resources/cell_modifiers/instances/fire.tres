@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CellModifier" format=3 uid="uid://dgt6hdw0k8xa2"]
+
+[ext_resource type="Script" uid="uid://dpqoi2hs1fvml" path="res://resources/cell_modifiers/cell_modifiers_component.gd" id="1_mjdib"]
+[ext_resource type="Script" uid="uid://bqno265lsmsqg" path="res://resources/cell_modifiers/components/damage_on_enter_component.gd" id="2_lgl6e"]
+[ext_resource type="Script" uid="uid://clh0bfdm6r36w" path="res://resources/cell_modifiers/cell_modifier.gd" id="2_r5dke"]
+
+[sub_resource type="Resource" id="Resource_yia1s"]
+script = ExtResource("2_lgl6e")
+metadata/_custom_type_script = "uid://bqno265lsmsqg"
+
+[resource]
+script = ExtResource("2_r5dke")
+diasplay_name = "Огонь"
+description = "Наносит урон (1), если наступить на клетку"
+components = Array[ExtResource("1_mjdib")]([SubResource("Resource_yia1s")])
+metadata/_custom_type_script = "uid://clh0bfdm6r36w"

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://ba7we1vdgobdr"]
+
+[ext_resource type="Script" uid="uid://vdky6lcu7131" path="res://scenes/field/cell_visual.gd" id="1_wteg7"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_l3yc7"]
+
+[node name="CellVisual" type="MeshInstance3D" unique_id=637856684]
+transform = Transform3D(1, 0, 0, 0, 0.5, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("BoxMesh_l3yc7")
+script = ExtResource("1_wteg7")

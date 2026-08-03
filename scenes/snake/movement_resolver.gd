@@ -26,3 +26,4 @@ static func apply_move(snake: Snake, field: Field, direction: Vector2i) -> void:
 	
 	snake.body.insert(0, target_position)
 	snake.body.pop_back()
+	snake.moved.emit()

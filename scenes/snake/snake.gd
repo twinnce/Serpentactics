@@ -1,6 +1,8 @@
 class_name Snake
 extends RefCounted
 
+signal moved
+
 var body: Array[Vector2i] = []
 var health: int = 3
 
